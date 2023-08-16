@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)file:///C:/Users/akbar/OneDrive/Dokumen/VsualCode/Tugas-R/index-2.html -->
+<html lang="eng">
+<head>
+    <meta  charset="UTF-8">
+    <meta name="viewport"> 
+    <link rel="stylesheet" href="./Kalkulator Segitiga_files/Style.css">
+    <title>Kalkulator Segitiga</title>
+</head>
+
+<body>
+    <h1>Kalkulator Menghitung Luas dan Keliling Segitiga</h1>
+    <main class="card">
+    <header>
+        <h2>Keliling Segitiga</h1>
+    </header>
+    <img src="../Asset/Rumus-keliling-Segitiga.webp"> 
+    </img>
+        
+        <section class="input-section">
+            <label for="sisi-1">Sisi a</label>
+            <input type="number" id="sisi-1" placeholder="0">
+            <label for="sisi-2">Sisi b</label>
+            <input type="number" id="sisi-2" placeholder="0">
+            <label for="sisi-3">Sisi c</label>
+            <input type="number" id="sisi-3" placeholder="0">
+        </section>
+        <section class="display">
+            <label for="keliling">Keliling Segitiga</label>
+            <output type="number" id="keliling" placeholder="0">
+            </section>
+        <section class="button">
+            <div class="semua-tombol">
+                <button class="tombol" id="hitung">Hitung</button> 
+                <button class="tombol" id="reset">Reset</button>
+            <ul>
+                
+                    <a href="Luas-Segitiga.html"><button class="tombol-luas" id="luas">Luas</button></a>
+                    
+            </ul> 
+            </div>
+                
+
+        </section>
+    </main>
+
+<footer>
+    <h4>by: Syahil Akbar</h4>
+</footer>
+<script>
+    const a = document.getElementById('sisi-1')
+const b = document.getElementById('sisi-2')
+const c = document.getElementById('sisi-3')
+const output = document.getElementById('keliling')
+hitung.addEventListener('click', function () {
+   output.innerText = Number(a.value) + Number(b.value) +Number (c.value) 
+})
+reset.addEventListener('click', function () {
+ a.value = null
+ b.value = null 
+ c.value = null
+ output.value = ''
+})
+</script>
+<script src="./java/java.js"></script>
+</body>
+</html>
